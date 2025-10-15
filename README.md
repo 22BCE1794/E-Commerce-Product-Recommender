@@ -24,24 +24,6 @@ This project implements an **E-commerce Product Recommender** system combining:
 - **LLM explanations:** Provides readable reasoning for each recommendation
 - **Frontend:** Streamlit dashboard to input user ID and display recommendations
 
-## Folder Structure
-
-Ecommerce-Recommender/
-│
-├─ backend/ # FastAPI backend
-│ ├─ app/
-│ │ ├─ main.py # API entrypoint
-│ │ ├─ recommender/
-│ │ │ ├─ item_cf.py # Collaborative filtering
-│ │ │ └─ content_based.py # Content-based & LLM scoring
-│ │ └─ data/ # Products & interactions CSV
-│
-├─ frontend/ # Streamlit frontend
-│ └─ app.py
-│
-├─ requirements.txt # Python dependencies
-└─ README.md # This file
-
 bash
 Copy code
 
