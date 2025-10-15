@@ -29,43 +29,51 @@ Copy code
 
 ## Setup Instructions
 
-### 1. Clone the repository
+## 1. Clone the repository
 
 git clone https://github.com/<your-username>/Ecommerce-Recommender.git
+
 cd Ecommerce-Recommender
 
-###2. Create and activate virtual environment
+##2. Create and activate virtual environment
 
 python -m venv venv
+
 .\venv\Scripts\Activate.ps1
 
-###3. Install dependencies
+##3. Install dependencies
 
 pip install -r requirements.txt
 
-###4. Run Backend (FastAPI)
+##4. Run Backend (FastAPI)
 
 cd backend
+
 uvicorn main:app --reload
 
 Backend URL: http://127.0.0.1:8000
+
 Swagger docs: http://127.0.0.1:8000/docs
 
-###5. Run Frontend (Streamlit)
+##5. Run Frontend (Streamlit)
 
 cd frontend
 
 streamlit run app.py
+
 Frontend URL: http://localhost:8501
 
-###How It Works
+##How It Works
+
 Collaborative Filtering: Scores products based on user-product interaction matrix
 
 Content-Based Scoring: TF-IDF vectorization of product metadata and cosine similarity with user profile
 
 LLM Explanation: Generates human-readable reasoning for recommended products
 
-###Deliverables
+
+##Deliverables
+
 Backend API for recommendations
 
 Frontend Dashboard for user interaction
@@ -75,6 +83,7 @@ LLM-powered explanations
 
 
 ###Evaluation Focus
+
 Recommendation accuracy
 
 LLM explanation quality
