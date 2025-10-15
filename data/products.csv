@@ -1,0 +1,9 @@
+product_id,title,category,brand,price,attributes
+p1,TrailRunner 300 Boots,footwear,TrailPro,120.0,"{'waterproof':'yes','weight':'1.2kg'}"
+p2,Outdoor Socks Pack,apparel,TrailPro,15.0,"{'material':'wool'}"
+p3,MountainGrip Hiking Boot,footwear,HikeMax,140.0,"{'waterproof':'yes','grip':'high'}"
+p4,CitySneak Casual Shoe,footwear,UrbanFit,60.0,"{'comfort':'medium'}"
+p5,HydroPack 20L,gear,TrailPro,80.0,"{'capacity':'20L','waterproof':'no'}"
+p6,Wireless Mouse,Electronics,Logi,799.0,"{'connectivity':'wireless','color':'black'}"
+p7,Gaming Keyboard,Electronics,Razer,1999.0,"{'backlight':'RGB','switch':'mechanical'}"
+p8,Noise Cancelling Headphones,Electronics,Sony,4999.0,"{'type':'over-ear','noise':'ANC'}"

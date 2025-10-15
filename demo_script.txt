@@ -1,0 +1,7 @@
+Demo script for recording: (approx 60-90s)
+1. Title slide (5s): "E-commerce Recommender — Demo"
+2. Show frontend (Streamlit) and enter user_id 'u1' (10s)
+3. Click 'Get Recommendations' (10s): show results and explanations.
+4. Open backend /health endpoint to show service is up (5s).
+5. Briefly mention files: backend/app, frontend, data, README (10s).
+6. Closing slide with run instructions (10s).

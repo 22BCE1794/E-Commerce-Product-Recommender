@@ -1,0 +1,7 @@
+user_id,product_id,event_type,value,timestamp
+u1,p1,view,1,2025-10-01 10:00:00
+u1,p2,purchase,1,2025-10-02 12:00:00
+u2,p3,view,1,2025-10-01 11:00:00
+u2,p4,purchase,1,2025-10-03 15:00:00
+u3,p5,view,1,2025-10-04 09:00:00
+u3,p6,purchase,1,2025-10-05 14:00:00

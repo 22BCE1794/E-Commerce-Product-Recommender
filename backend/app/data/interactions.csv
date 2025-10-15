@@ -1,0 +1,7 @@
+user_id,product_id,event_type,value
+u1,p1,view,1
+u1,p2,purchase,1
+u2,p3,view,1
+u2,p4,purchase,1
+u3,p5,view,1
+u3,p6,purchase,1
