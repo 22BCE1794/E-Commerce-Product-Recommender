@@ -29,8 +29,7 @@ This project implements an **E-commerce Product Recommender** system combining:
 
 ## 1. Clone the repository
 
-git clone https://github.com/<your-username>/Ecommerce-Recommender.git
-
+git clone https://github.com/22BCE1794/E-Commerce-Product-Recommender.git
 cd Ecommerce-Recommender
 
 
