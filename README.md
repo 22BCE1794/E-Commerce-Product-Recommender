@@ -24,8 +24,6 @@ This project implements an **E-commerce Product Recommender** system combining:
 - **LLM explanations:** Provides readable reasoning for each recommendation
 - **Frontend:** Streamlit dashboard to input user ID and display recommendations
 
-bash
-Copy code
 
 ## Setup Instructions
 
@@ -35,17 +33,20 @@ git clone https://github.com/<your-username>/Ecommerce-Recommender.git
 
 cd Ecommerce-Recommender
 
-##2. Create and activate virtual environment
+
+## 2. Create and activate virtual environment
 
 python -m venv venv
 
 .\venv\Scripts\Activate.ps1
 
-##3. Install dependencies
+
+## 3. Install dependencies
 
 pip install -r requirements.txt
 
-##4. Run Backend (FastAPI)
+
+## 4. Run Backend (FastAPI)
 
 cd backend
 
@@ -55,7 +56,8 @@ Backend URL: http://127.0.0.1:8000
 
 Swagger docs: http://127.0.0.1:8000/docs
 
-##5. Run Frontend (Streamlit)
+
+## 5. Run Frontend (Streamlit)
 
 cd frontend
 
@@ -63,7 +65,8 @@ streamlit run app.py
 
 Frontend URL: http://localhost:8501
 
-##How It Works
+
+## How It Works
 
 Collaborative Filtering: Scores products based on user-product interaction matrix
 
@@ -72,7 +75,7 @@ Content-Based Scoring: TF-IDF vectorization of product metadata and cosine simil
 LLM Explanation: Generates human-readable reasoning for recommended products
 
 
-##Deliverables
+## Deliverables
 
 Backend API for recommendations
 
@@ -82,7 +85,7 @@ LLM-powered explanations
 
 
 
-###Evaluation Focus
+## Evaluation Focus
 
 Recommendation accuracy
 
