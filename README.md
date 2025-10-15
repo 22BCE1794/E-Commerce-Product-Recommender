@@ -31,59 +31,50 @@ Copy code
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/<your-username>/Ecommerce-Recommender.git
 cd Ecommerce-Recommender
-2. Create and activate virtual environment
-Windows (PowerShell):
 
-powershell
-Copy code
+###2. Create and activate virtual environment
+
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-Linux / Mac:
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-3. Install dependencies
-bash
-Copy code
+###3. Install dependencies
+
 pip install -r requirements.txt
-4. Run Backend (FastAPI)
-bash
-Copy code
+
+###4. Run Backend (FastAPI)
+
 cd backend
 uvicorn main:app --reload
-Backend URL: http://127.0.0.1:8000
 
+Backend URL: http://127.0.0.1:8000
 Swagger docs: http://127.0.0.1:8000/docs
 
-5. Run Frontend (Streamlit)
-bash
-Copy code
+###5. Run Frontend (Streamlit)
+
 cd frontend
+
 streamlit run app.py
 Frontend URL: http://localhost:8501
 
-How It Works
+###How It Works
 Collaborative Filtering: Scores products based on user-product interaction matrix
 
 Content-Based Scoring: TF-IDF vectorization of product metadata and cosine similarity with user profile
 
 LLM Explanation: Generates human-readable reasoning for recommended products
 
-Deliverables
+###Deliverables
 Backend API for recommendations
 
 Frontend Dashboard for user interaction
 
 LLM-powered explanations
 
-Demo video and GitHub repository
 
-Evaluation Focus
+
+###Evaluation Focus
 Recommendation accuracy
 
 LLM explanation quality
