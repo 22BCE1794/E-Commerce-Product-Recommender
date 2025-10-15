@@ -1,94 +1,111 @@
-E-commerce Product Recommender
-Project Overview
+# E-commerce Product Recommender
 
-This project implements an E-commerce Product Recommender system that combines recommendation algorithms (content-based and collaborative filtering) with LLM-powered explanations. Users receive personalized product recommendations along with natural-language explanations describing why each product is suggested.
+[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/streamlit-frontend-green)](https://streamlit.io/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-backend-red)](https://fastapi.tiangolo.com/)
 
-Objective:
+## Project Overview
 
-Input: Product catalog + user behavior
+This project implements an **E-commerce Product Recommender** system combining:
 
-Output: Recommended products + LLM-generated explanation (“Why this product?”)
+- **Collaborative filtering** and **content-based recommendation**
+- **LLM-powered explanations** for personalized recommendations
 
-Optional: Frontend dashboard for user interaction
+**Objective:**
 
-Features
+- **Input:** Product catalog + user behavior
+- **Output:** Recommended products with natural-language explanations
+- **Optional:** Frontend dashboard for user interaction
 
-User-based recommendations: Collaborative filtering for user-product interactions.
+## Features
 
-Content-based recommendations: Uses product metadata (title, category, brand, attributes) with TF-IDF & cosine similarity.
+- **User-based recommendations** using collaborative filtering
+- **Content-based recommendations** using product metadata (title, category, brand, attributes) with TF-IDF & cosine similarity
+- **LLM explanations:** Provides readable reasoning for each recommendation
+- **Frontend:** Streamlit dashboard to input user ID and display recommendations
 
-LLM explanations: Provides readable reasoning for each recommendation.
+## Folder Structure
 
-Frontend: Streamlit dashboard to enter user ID and view recommendations.
-
-Folder Structure
 Ecommerce-Recommender/
 │
-├─ backend/                  # FastAPI backend
-│   ├─ app/
-│   │   ├─ main.py           # API entrypoint
-│   │   ├─ recommender/
-│   │   │   ├─ item_cf.py    # Collaborative filtering
-│   │   │   └─ content_based.py  # Content-based & LLM scoring
-│   │   └─ data/             # Products & interactions CSV
+├─ backend/ # FastAPI backend
+│ ├─ app/
+│ │ ├─ main.py # API entrypoint
+│ │ ├─ recommender/
+│ │ │ ├─ item_cf.py # Collaborative filtering
+│ │ │ └─ content_based.py # Content-based & LLM scoring
+│ │ └─ data/ # Products & interactions CSV
 │
-├─ frontend/                 # Streamlit frontend
-│   └─ app.py
+├─ frontend/ # Streamlit frontend
+│ └─ app.py
 │
-├─ requirements.txt          # Python dependencies
-└─ README.md                 # This file
+├─ requirements.txt # Python dependencies
+└─ README.md # This file
 
-Setup Instructions
-1️⃣ Clone the repository
+bash
+Copy code
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/<your-username>/Ecommerce-Recommender.git
 cd Ecommerce-Recommender
-
-2️⃣ Create and activate virtual environment
-
+2. Create and activate virtual environment
 Windows (PowerShell):
 
+powershell
+Copy code
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-
-
 Linux / Mac:
 
+bash
+Copy code
 python3 -m venv venv
 source venv/bin/activate
-
-3️⃣ Install dependencies
+3. Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
-4️⃣ Run backend (FastAPI)
+4. Run Backend (FastAPI)
+bash
+Copy code
 cd backend
 uvicorn main:app --reload
-
-
-Backend runs at: http://127.0.0.1:8000
+Backend URL: http://127.0.0.1:8000
 
 Swagger docs: http://127.0.0.1:8000/docs
 
-5️⃣ Run frontend (Streamlit)
+5. Run Frontend (Streamlit)
+bash
+Copy code
 cd frontend
 streamlit run app.py
+Frontend URL: http://localhost:8501
 
+How It Works
+Collaborative Filtering: Scores products based on user-product interaction matrix
 
-Frontend opens at: http://localhost:8501
+Content-Based Scoring: TF-IDF vectorization of product metadata and cosine similarity with user profile
 
-Usage
+LLM Explanation: Generates human-readable reasoning for recommended products
 
-Enter a user ID in the frontend.
+Deliverables
+Backend API for recommendations
 
-Click Submit to view recommended products.
+Frontend Dashboard for user interaction
 
-Each recommendation shows:
+LLM-powered explanations
 
-Product details
+Demo video and GitHub repository
 
-Score (relevance)
+Evaluation Focus
+Recommendation accuracy
 
-LLM-generated explanation
+LLM explanation quality
 
-Demo Video
+Code design and structure
 
-Watch demo
+Documentation and setup instructions
