@@ -4,12 +4,9 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import pandas as pd
 from dotenv import load_dotenv
-from recommender.item_cf import build_interaction_matrix, item_similarity_matrix, score_items_for_user
-from recommender.content_based import ContentScorer
-from llm import generate_explanation, LLM_MOCK
-
-
-
+from app.recommender.item_cf import build_interaction_matrix, item_similarity_matrix, score_items_for_user
+from app.recommender.content_based import ContentScorer
+from app.llm import generate_explanation, LLM_MOCK
 
 # Load environment variables
 load_dotenv()
