@@ -18,7 +18,11 @@ class RecommendResponse(BaseModel):
     user_id: str
     recommendations: List[Recommendation]
 
-recommender = HybridRecommender(products_csv='data/products.csv', interactions_csv='data/interactions.csv')
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  # points to app/
+DATA_DIR = os.path.join(ROOT_DIR, "data")
+
+recommender = HybridRecommender(products_csv=os.path.join(DATA_DIR, 'products.csv'),interactions_csv=os.path.join(DATA_DIR, 'interactions.csv'))
+
 llm = LLMWrapper()
 
 @router.post('/recommend', response_model=RecommendResponse)
