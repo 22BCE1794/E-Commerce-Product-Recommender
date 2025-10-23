@@ -2,9 +2,10 @@ import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
-
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..")) 
+DATA_DIR = os.path.join(ROOT_DIR, "data")
 class HybridRecommender:
-    def __init__(self, products_csv='data/products.csv', interactions_csv='data/interactions.csv'):
+    def __init__(self, products_csv=os.path.join(DATA_DIR, 'products.csv'), interactions_csv=os.path.join(DATA_DIR, 'interactions.csv')):
         self.products = pd.read_csv(products_csv)
         self.interactions = pd.read_csv(interactions_csv)
         # prepare content model
