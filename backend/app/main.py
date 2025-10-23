@@ -75,12 +75,8 @@ async def recommend(req: RecommendRequest):
         cf_scores = score_items_for_user(user_id, interaction_matrix, sim_df)
 
         # Get user’s last 10 interactions
-        user_history = list(
-            interactions_df[interactions_df["user_id"] == user_id]
-            .sort_values("timestamp", ascending=False)["product_id"]
-            .head(10)
-            .values
-        )
+        user_history = list(interactions_df[interactions_df["user_id"] == user_id]["product_id"].head(10).values)
+
 
         # Content-based
         cb_scores = content_scorer.score(user_history)
