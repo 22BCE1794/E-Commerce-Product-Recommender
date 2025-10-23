@@ -14,8 +14,9 @@ load_dotenv()
 # -------------------------------
 # Paths
 # -------------------------------
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-DATA_DIR = os.path.join(ROOT_DIR, "data")
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  
+DATA_DIR = os.path.join(ROOT_DIR, "data") 
+
 
 PRODUCTS_CSV = os.path.join(DATA_DIR, "products.csv")
 INTERACTIONS_CSV = os.path.join(DATA_DIR, "interactions.csv")
