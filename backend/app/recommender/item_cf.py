@@ -15,8 +15,11 @@ class RecommendRequest(BaseModel):
     tone: str = "friendly"
 
 # ----------------- Data loading -----------------
-products = pd.read_csv("../data/products.csv")  # product_id, title, category, brand, price, attributes
-interactions = pd.read_csv("../data/interactions.csv")  # user_id, product_id, event_type, value
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "..", "data")
+
+products = pd.read_csv(os.path.join(DATA_DIR, "products.csv"))
+interactions = pd.read_csv(os.path.join(DATA_DIR, "interactions.csv"))
 
 # ----------------- Collaborative filtering -----------------
 def build_interaction_matrix(interactions: pd.DataFrame):
